@@ -1,66 +1,55 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+  <html>
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <script src="index.js"></script>
+  </head>
 
-<html>
-    <head>
-        <meta name="viewport" content=" user-scalable=no" />
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-164117054-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-164117054-1', {'optimize_id': 'GTM-T7D8P8K'});
-        </script>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <title> Memory </title>     
-    </head>
-    <body>
-        <script src="./Media/Images/cards.js"></script>
-        <script src="app.js"></script>
-            <div class="fog">
-                <div class="absolute-background"></div>
-                <div class="fog-container">
-                    <div class="fog-img fog-img-first"></div>
-                    <div class="fog-img fog-img-second"></div>
-                <div class="center-content">
-                    <div class="cloud-style">
-                        <div class="title-style">
-                            Memory
-                            <div class="info-style">
-                                Timer:
-                                <span id="timer">
-                                    200
-                                </span>
-                                Score:
-                                <span id="score">
-                                    0
-                                </span>
-                            </div>
-                            <div class="buttons-wrapper">
-                                <button class="buttons-style" onclick="toggleGame()">
-                                    Start
-                                </button>
-                                <button class="buttons-style" style="pointer-events:none;" onclick="toggleCounter()">
-                                    Pause
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="myModal" class="modal">
-                    <div class="modal-wrapper">
-                        <div class="close-wrapper">
-                            <span class="close" onclick="closeModal()">X</span>
-                        </div>
-                        <div class="status">You Win!</div>
-                        <div class="restart-wrapper">
-                            <span class="restart" onclick="restartGame()">Restart</span>
-                        </div>
-                    </div>
-                        </div>
-                    <div id="cards" class="cards-style"></div>
-                </div>
-            </div>
+  <body>
+    <div class="content">
+      <svg width="800" height="800">
+        <path id="first-curve" d="M 15 400 A 60,60 0 1 1 750 400" fill="none"/>
+        <text width="800" dy='40' dx='50' fill="#baaf81" >
+          <textPath  href="#first-curve">
+            <a fill="#baaf81" target="_blank" class="text link" href="https://github.com/MihaiVisovan">Github</a>
+          </textPath>
+          <textPath class="text" href="#first-curve" startOffset="30%">
+            -
+          </textPath>
+          <textPath href="#first-curve" startOffset="35%">
+            <a fill="#baaf81" target="_blank" class="text link" href="https://www.linkedin.com/in/visovan-mihai/">Linkedin</a>
+          </textPath>
+          <textPath class="text" href="#first-curve" startOffset="65%">
+            -
+          </textPath>
+          <textPath href="#first-curve" startOffset="70%">
+            <a fill="#baaf81" target="_blank" class="text link" href="https://memory.mihaivisovan.com/">Projects</a>
+          </textPath>
+        </text>
+        <path id="second-curve" d="M 15 400 A 60,60 0 1 0 750 400" fill="none"/>  
+        <text width="800" fill="#baaf81">
+          <textPath class="text" href="#second-curve">
+            -
+          </textPath>
+          <textPath href="#second-curve" startOffset="6%">
+            <a href="./assets/Resume.pdf" fill="#baaf81" class="text link" target="_blank" download="Resume.pdf">Resume</a>
+          </textPath>
+          <textPath class="text" href="#second-curve" startOffset="34%">
+            -
+          </textPath>
+          <textPath class="text" href="#second-curve" startOffset="40%">
+            About me
+          </textPath>
+          <textPath class="text" href="#second-curve" startOffset="73%">
+            -
+          </textPath>
+          <textPath href="#second-curve" startOffset="79%">
+            <a fill="#baaf81" target="_blank" class="text link" href="https://en.wikipedia.org/wiki/One_Ring">Ring</a>
+          </textPath>
+          <textPath class="text" href="#second-curve" startOffset="98%">
+            -
+          </textPath>
+        </text>
+      </svg>
     </body>
 </html>

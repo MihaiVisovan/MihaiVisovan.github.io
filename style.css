@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'LOTR';
+  src: url('./fonts/MorrisRoman-Black.ttf') format('truetype');
+}
+
+body {
+  background-image: url('./images/sea.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+.text {
+  font-family: 'LOTR';
+  color: #baaf81;
+  font-size: 6rem;
+  opacity: 0.6;
+  filter: drop-shadow(1px 1px 20px #baaf81) sepia(0.5) contrast(1);
+  height: 700px;
+  width: 50px;
+}
+
+.link:hover {
+  cursor: pointer;
+  filter: brightness(10) drop-shadow(1px 1px 10px white) sepia(0) contrast(1);
+  opacity: 1;
+}
