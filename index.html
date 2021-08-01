@@ -7,45 +7,74 @@
 
   <body>
     <div class="content">
+      <div class="menu">
+        <div>
+          <a class="text link" style="font-size: 5rem" target="_blank" href="https://memory.mihaivisovan.com">Memory</a>
+        </div>
+        <div>
+          <a class="text link" style="font-size: 5rem" target="_blank" href="https://minesweeper.mihaivisovan.com">Minesweeper</a>
+        </div>
+      </div>
       <svg width="800" height="800">
         <path id="first-curve" d="M 15 400 A 60,60 0 1 1 750 400" fill="none"/>
-        <text width="800" dy='40' dx='50' fill="#baaf81" >
+        <text dy='80' dx='50' fill="#baaf81">
           <textPath  href="#first-curve">
             <a fill="#baaf81" target="_blank" class="text link" href="https://github.com/MihaiVisovan">Github</a>
           </textPath>
-          <textPath class="text" href="#first-curve" startOffset="30%">
+        </text>
+        <text dy='80' dx='50' fill="#baaf81">
+          <textPath class="text" href="#first-curve" startOffset="25%">
             -
-          </textPath>
-          <textPath href="#first-curve" startOffset="35%">
-            <a fill="#baaf81" target="_blank" class="text link" href="https://www.linkedin.com/in/visovan-mihai/">Linkedin</a>
-          </textPath>
-          <textPath class="text" href="#first-curve" startOffset="65%">
-            -
-          </textPath>
-          <textPath href="#first-curve" startOffset="70%">
-            <a fill="#baaf81" target="_blank" class="text link" href="https://memory.mihaivisovan.com/">Projects</a>
           </textPath>
         </text>
+        <text dy='80' dx='50' fill="#baaf81">
+          <textPath href="#first-curve" startOffset="30%">
+            <a fill="#baaf81" target="_blank" class="text link" href="https://www.linkedin.com/in/visovan-mihai/">Linkedin</a>
+          </textPath>
+        </text>
+        <text dy='80' dx='50' fill="#baaf81">
+          <textPath class="text" href="#first-curve" startOffset="60%">
+            -
+          </textPath>
+        </text>
+        <text id="projects" dy='80' dx='50' fill="#baaf81">
+          <textPath href="#first-curve" startOffset="67%">
+            <a  onclick="showProjects()" fill="#baaf81" class="text link">Projects</a>
+          </textPath>
+        </text>
+
         <path id="second-curve" d="M 15 400 A 60,60 0 1 0 750 400" fill="none"/>  
-        <text width="800" fill="#baaf81">
+        <text dy='-30' dx='0' fill="#baaf81">
           <textPath class="text" href="#second-curve">
             -
           </textPath>
+        </text>
+          <text dy='-30' dx='0' fill="#baaf81">
           <textPath href="#second-curve" startOffset="6%">
             <a href="./assets/Resume.pdf" fill="#baaf81" class="text link" target="_blank" download="Resume.pdf">Resume</a>
           </textPath>
+        </text>
+          <text dy='-30' dx='0' fill="#baaf81">
           <textPath class="text" href="#second-curve" startOffset="34%">
             -
           </textPath>
+        </text>
+          <text dy='-30' dx='0' fill="#baaf81">
           <textPath class="text" href="#second-curve" startOffset="40%">
             About me
           </textPath>
+        </text>
+          <text dy='-30' dx='0' fill="#baaf81">
           <textPath class="text" href="#second-curve" startOffset="73%">
             -
           </textPath>
+        </text>
+          <text dy='-30' dx='0' fill="#baaf81">
           <textPath href="#second-curve" startOffset="79%">
             <a fill="#baaf81" target="_blank" class="text link" href="https://en.wikipedia.org/wiki/One_Ring">Ring</a>
           </textPath>
+        </text>
+          <text dy='-30' dx='0' fill="#baaf81">
           <textPath class="text" href="#second-curve" startOffset="98%">
             -
           </textPath>

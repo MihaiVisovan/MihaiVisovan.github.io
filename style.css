@@ -13,9 +13,15 @@ body {
 
 .content {
   display: flex;
+  height: 100vh;
   justify-content: center;
   align-items: center;
-  margin-top: 5vh;
+}
+
+.menu {
+  position: absolute;
+  text-align: center;
+  display: none;
 }
 
 .text {
@@ -26,10 +32,53 @@ body {
   filter: drop-shadow(1px 1px 20px #baaf81) sepia(0.5) contrast(1);
   height: 700px;
   width: 50px;
+  text-decoration: none;
 }
 
 .link:hover {
   cursor: pointer;
   filter: brightness(10) drop-shadow(1px 1px 10px white) sepia(0) contrast(1);
   opacity: 1;
+}
+
+.text-pop-up-top {
+  animation: text-pop-up-top 0.5s ease-in forwards;
+}
+
+.text-pop-up-bottom {
+  animation: text-pop-up-top 0.5s ease-in forwards reverse;
+}
+
+@keyframes text-pop-up-top {
+  0% {
+    transform: translateY(0);
+    transform-origin: 50% 50%;
+    text-shadow: none;
+  }
+  100% {
+    transform: translateY(-150px);
+    transform-origin: 50% 50%;
+    text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+  }
+}
+
+svg {
+  transform-origin: 50% 50%;
+  animation-name: slide-in-blurred-top;
+  animation-duration: 2.5s;
+  animation-timing-function: ease;
+}
+
+@keyframes slide-in-blurred-top {
+  0% {
+    transform: scaleY(0.1) scaleX(0.1);
+    filter: blur(250px);
+    opacity: 0.5;
+  }
+  100% {
+    pointer-events: all;
+    transform: scaleY(1) scaleX(1);
+    filter: blur(0);
+    opacity: 1;
+  }
 }
