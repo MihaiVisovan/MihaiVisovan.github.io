@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
+  margin: 0;
 }
 
 .content {
@@ -67,7 +68,7 @@ svg {
   animation-name: slide-in-blurred-top;
   animation-duration: 2.5s;
   animation-timing-function: ease;
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 @keyframes slide-in-blurred-top {
