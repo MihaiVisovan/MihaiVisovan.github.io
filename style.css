@@ -67,6 +67,7 @@ svg {
   animation-name: slide-in-blurred-top;
   animation-duration: 2.5s;
   animation-timing-function: ease;
+  margin-right: 2.5rem;
 }
 
 @keyframes slide-in-blurred-top {
