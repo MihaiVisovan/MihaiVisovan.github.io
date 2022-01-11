@@ -34,7 +34,7 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const adjustDimensions = () => {
+const adjustDimensions = () => {  
   const firstCurve = document.querySelector('#first-curve');
   const secondCurve = document.querySelector('#second-curve');
   const svgContainer = document.querySelector('#svg-container');

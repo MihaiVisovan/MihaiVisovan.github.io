@@ -33,44 +33,46 @@ body {
   display: none;
 }
 
-.text {
-  font-family: 'LOTR';
-  color: #baaf81;
-  opacity: 0.6;
-  filter: drop-shadow(1px 1px 20px #baaf81) sepia(0.5) contrast(1);
-  height: 700px;
-  width: 50px;
-  font-size: 6rem;
-  text-decoration: none;
-}
-
 .fontSize {
   font-size: 5rem;
 }
 
-@media screen and (max-width: 1700px) {
+.text {
+  font-family: 'LOTR';
+  color: #fbf1c6;
+  opacity: 0.6;
+  filter: drop-shadow(1px 1px 20px black) sepia(0.5) contrast(1);
+  height: 300px;
+  width: 25px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 767px) {
   .text {
     height: 500px;
     width: 35px;
     font-size: 4rem;
-  }   
-  
+  }  
+
   .fontSize {
     font-size: 4rem;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1700px) {
   .text {
-    height: 300px;
-    width: 25px;
-    font-size: 2rem;
-  }  
-
+    height: 700px;
+    width: 50px;
+    font-size: 6rem;
+  }   
+  
   .fontSize {
-    font-size: 2rem;
+    font-size: 6rem;
   }
 }
+
+
 
 .link:hover {
   cursor: pointer;
