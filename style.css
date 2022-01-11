@@ -39,7 +39,7 @@ body {
 
 .text {
   font-family: 'LOTR';
-  color: #fbf1c6;
+  color: #baaf81;
   opacity: 0.6;
   filter: drop-shadow(1px 1px 20px black) sepia(0.5) contrast(1);
   height: 300px;
