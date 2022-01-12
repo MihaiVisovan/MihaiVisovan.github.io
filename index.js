@@ -39,22 +39,29 @@ const adjustDimensions = () => {
   const secondCurve = document.querySelector('#second-curve');
   const svgContainer = document.querySelector('#svg-container');
   const windowWidth = window.innerWidth;
-  if (windowWidth <= 767) {
-    svgContainer.setAttribute('height', 400);
-    svgContainer.setAttribute('width', 400);
-    firstCurve.setAttribute('d', 'M100 200, A1 1, 0, 0 1, 300 200');
-    secondCurve.setAttribute('d', 'M80 210, A1 1, 0, 0 0, 320 210');
+  if (windowWidth >= 1700) {
+    svgContainer.setAttribute('height', 800);
+    svgContainer.setAttribute('width', 800);
+    firstCurve.setAttribute('d', 'M100 400, A1 1, 0, 0 1, 700 400');
+    secondCurve.setAttribute('d', 'M50 410 A1 1, 0, 0 0, 750 410');
     return;
   }
-  if (windowWidth <= 1700) {
+  if (windowWidth >= 600) {
     svgContainer.setAttribute('height', 600);
     svgContainer.setAttribute('width', 600);
     firstCurve.setAttribute('d', 'M100 300, A1 1, 0, 0 1, 500 300');
     secondCurve.setAttribute('d', 'M60 310, A1 1, 0, 0 0, 540 310');
     return;
   }
-  svgContainer.setAttribute('height', 800);
-  svgContainer.setAttribute('width', 800);
-  firstCurve.setAttribute('d', 'M100 400, A1 1, 0, 0 1, 700 400');
-  secondCurve.setAttribute('d', 'M50 410 A1 1, 0, 0 0, 750 410');
+  if (windowWidth >= 400) {
+    svgContainer.setAttribute('height', 400);
+    svgContainer.setAttribute('width', 400);
+    firstCurve.setAttribute('d', 'M100 200, A1 1, 0, 0 1, 300 200');
+    secondCurve.setAttribute('d', 'M80 210, A1 1, 0, 0 0, 320 210');
+    return;
+  }
+  svgContainer.setAttribute('height', 300);
+  svgContainer.setAttribute('width', 300);
+  firstCurve.setAttribute('d', 'M50 150, A1 1, 0, 0 1, 250 150');
+  secondCurve.setAttribute('d', 'M30 160, A1 1, 0, 0 0, 270 160');
 };
